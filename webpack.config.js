@@ -4,7 +4,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 // Phaser webpack config
-var phaserModule = path.join(__dirname, '/node_modules/phaser/');
+var phaserModule = path.join(__dirname, '/node_modules/phaser-ce/');
 var phaser = path.join(phaserModule, 'build/custom/phaser-split.js');
 var pixi = path.join(phaserModule, 'build/custom/pixi.js');
 var p2 = path.join(phaserModule, 'build/custom/p2.js');
@@ -12,7 +12,7 @@ var p2 = path.join(phaserModule, 'build/custom/p2.js');
 module.exports = {
   entry: './src/index.ts',
   output: {
-    pathInfo: true,
+    pathinfo: true,
     filename: '[name].bundle.js',
     path: path.resolve('./dist'),
     publicPath: '/'
@@ -30,15 +30,15 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './index.html',
       inject: 'body',
-    }),
-    new webpack.NoErrorsPlugin(),
+    })/*,
+    new webpack.NoErrorsPlugin(),*/
   ],
   module: {
     loaders: [
-      { test: /pixi\.js/, loader: 'expose?PIXI' },
-      { test: /phaser-split\.js$/, loader: 'expose?Phaser' },
-      { test: /p2\.js/, loader: 'expose?p2' },
-      { test: /\.ts?$/, loader: 'ts', exclude: '/node_modules/' }
+      { test: /pixi\.js/, loader: 'expose-loader?PIXI' },
+      { test: /phaser-split\.js$/, loader: 'expose-loader?Phaser' },
+      { test: /p2\.js/, loader: 'expose-loader?p2' },
+      { test: /\.ts?$/, loader: 'ts-loader', exclude: '/node_modules/' }
     ]
   },
   node: {

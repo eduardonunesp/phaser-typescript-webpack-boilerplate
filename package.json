@@ -9,15 +9,17 @@
   },
   "author": "Eduardo Nunes Pereira (eduardonunesp@gmail.com)",
   "license": "MIT",
+  "dependencies": {
+    "phaser-ce": "^2.7.3"
+  },
   "devDependencies": {
-    "copy-webpack-plugin": "^3.0.1",
+    "copy-webpack-plugin": "^4.0.1",
     "expose-loader": "^0.7.1",
-    "html-webpack-plugin": "^2.22.0",
-    "phaser": "^2.6.2",
+    "html-webpack-plugin": "^2.26.0",
     "rimraf": "^2.5.4",
-    "ts-loader": "^0.8.2",
-    "typescript": "^2.0.3",
-    "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.16.1"
+    "ts-loader": "^2.0.0",
+    "typescript": "^2.1.5",
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^2.2.0"
   }
 }
