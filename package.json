@@ -10,13 +10,25 @@
   "author": "Eduardo Nunes Pereira (eduardonunesp@gmail.com)",
   "license": "MIT",
   "dependencies": {
-    "phaser-ce": "^2.7.3"
+    "@angular/common": "^2.4.5",
+    "@angular/compiler": "^2.4.5",
+    "@angular/core": "^2.4.5",
+    "@angular/platform-browser": "^2.4.5",
+    "@angular/platform-browser-dynamic": "^2.4.5",
+    "core-js": "^2.4.1",
+    "phaser-ce": "^2.7.3",
+    "reflect-metadata": "^0.1.9",
+    "rxjs": "^5.0.3",
+    "zone.js": "^0.7.6"
   },
   "devDependencies": {
+    "@types/core-js": "^0.9.35",
+    "@types/node": "^7.0.4",
     "copy-webpack-plugin": "^4.0.1",
     "expose-loader": "^0.7.1",
     "html-webpack-plugin": "^2.26.0",
     "rimraf": "^2.5.4",
+    "ts-helpers": "^1.1.2",
     "ts-loader": "^2.0.0",
     "typescript": "^2.1.5",
     "webpack": "^2.2.0",
