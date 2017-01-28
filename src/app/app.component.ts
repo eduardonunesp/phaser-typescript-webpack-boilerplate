@@ -9,7 +9,7 @@ import * as Phaser from 'phaser';
 
 @Component({
   selector: 'app',
-  template: `<div class="content"></div>`
+  template: `<ui-view></ui-view>`
 })
 export class AppComponent implements OnInit {
   game: Phaser.Game;

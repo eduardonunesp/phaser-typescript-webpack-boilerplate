@@ -16,10 +16,12 @@
     "url": "https://github.com/twbte/angular2-phaser-typescript-webpack-boilerplate/issues"
   },
   "author": "Tristan W. Bonsor <twbtechnologies@gmail.com>",
-  "contributors": [{
-    "name": "Eduardo Nunes Pereira",
-    "email": "eduardonunesp@gmail.com"
-  }],
+  "contributors": [
+    {
+      "name": "Eduardo Nunes Pereira",
+      "email": "eduardonunesp@gmail.com"
+    }
+  ],
   "license": "MIT",
   "dependencies": {
     "@angular/common": "^2.4.5",
@@ -27,10 +29,12 @@
     "@angular/core": "^2.4.5",
     "@angular/platform-browser": "^2.4.5",
     "@angular/platform-browser-dynamic": "^2.4.5",
+    "@angular/router": "^3.4.5",
     "core-js": "^2.4.1",
     "phaser-ce": "^2.7.3",
     "reflect-metadata": "^0.1.9",
     "rxjs": "^5.0.3",
+    "ui-router-ng2": "^1.0.0-beta.4",
     "zone.js": "^0.7.6"
   },
   "devDependencies": {
