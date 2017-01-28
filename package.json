@@ -5,7 +5,9 @@
   "main": "dist/index.js",
   "scripts": {
     "start": "webpack-dev-server -d --inline --hot --progress --no-info --port 9000",
-    "build": "rimraf ./dist && webpack -p"
+    "build": "rimraf ./dist && webpack -p",
+    "test": "karma start",
+    "posttest": "remap-istanbul -i coverage/raw/coverage-final.json -t text-lcov | lcov-summary && remap-istanbul -i coverage/raw/coverage-final.json -o coverage/html -t html"
   },
   "author": "Eduardo Nunes Pereira (eduardonunesp@gmail.com)",
   "license": "MIT",
@@ -23,10 +25,21 @@
   },
   "devDependencies": {
     "@types/core-js": "^0.9.35",
+    "@types/jasmine": "^2.5.41",
     "@types/node": "^7.0.4",
     "copy-webpack-plugin": "^4.0.1",
     "expose-loader": "^0.7.1",
     "html-webpack-plugin": "^2.26.0",
+    "istanbul-instrumenter-loader": "^1.2.0",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.4.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-mocha-reporter": "^2.2.2",
+    "karma-webpack": "^2.0.2",
+    "lcov-summary": "^1.0.1",
+    "remap-istanbul": "^0.8.4",
     "rimraf": "^2.5.4",
     "ts-helpers": "^1.1.2",
     "ts-loader": "^2.0.0",
