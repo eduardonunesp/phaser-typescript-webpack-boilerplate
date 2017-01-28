@@ -1,23 +1,66 @@
 {
-  "name": "phaser-typescript-webpack-boilerplate",
-  "version": "1.0.0",
-  "description": "Starter boilerplate for an Phaser game",
+  "name": "angular2-phaser-typescript-webpack-boilerplate",
+  "version": "0.1.0-alpha",
+  "description": "Starter for an HTML5 game using Angular 2, Phaser CE, Typescript, and Webpack. Includes unit testing and coverage reporting.",
   "main": "dist/index.js",
   "scripts": {
     "start": "webpack-dev-server -d --inline --hot --progress --no-info --port 9000",
-    "build": "rimraf ./dist && webpack -p"
+    "build": "rimraf ./dist && webpack -p",
+    "test": "karma start"
   },
-  "author": "Eduardo Nunes Pereira (eduardonunesp@gmail.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/twbte/angular2-phaser-typescript-webpack-boilerplate"
+  },
+  "bugs": {
+    "url": "https://github.com/twbte/angular2-phaser-typescript-webpack-boilerplate/issues"
+  },
+  "author": "Tristan W. Bonsor <twbtechnologies@gmail.com>",
+  "contributors": [
+    {
+      "name": "Eduardo Nunes Pereira",
+      "email": "eduardonunesp@gmail.com"
+    }
+  ],
   "license": "MIT",
+  "dependencies": {
+    "@angular/common": "^2.4.5",
+    "@angular/compiler": "^2.4.5",
+    "@angular/core": "^2.4.5",
+    "@angular/platform-browser": "^2.4.5",
+    "@angular/platform-browser-dynamic": "^2.4.5",
+    "@angular/router": "^3.4.5",
+    "core-js": "^2.4.1",
+    "phaser-ce": "^2.7.3",
+    "reflect-metadata": "^0.1.9",
+    "rxjs": "^5.0.3",
+    "ui-router-ng2": "^1.0.0-beta.4",
+    "zone.js": "^0.7.6"
+  },
   "devDependencies": {
-    "copy-webpack-plugin": "^3.0.1",
+    "@types/core-js": "^0.9.35",
+    "@types/jasmine": "^2.5.41",
+    "@types/node": "^7.0.4",
+    "copy-webpack-plugin": "^4.0.1",
     "expose-loader": "^0.7.1",
-    "html-webpack-plugin": "^2.22.0",
-    "phaser": "^2.6.2",
+    "html-webpack-plugin": "^2.26.0",
+    "istanbul-instrumenter-loader": "^1.2.0",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.4.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-mocha-reporter": "^2.2.2",
+    "karma-remap-coverage": "^0.1.4",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^2.0.2",
     "rimraf": "^2.5.4",
-    "ts-loader": "^0.8.2",
-    "typescript": "^2.0.3",
-    "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.16.1"
+    "source-map-loader": "^0.1.6",
+    "ts-helpers": "^1.1.2",
+    "ts-loader": "^2.0.0",
+    "typescript": "^2.1.5",
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^2.2.0",
+    "webpack-merge": "^2.6.0"
   }
 }
