@@ -1,6 +1,6 @@
-# Phaser TypeScript Webpack Boilerplate
+# Angular 2 Phaser TypeScript Webpack Boilerplate
 
-Start developing your own HTML5 games using [TypeScript](https://www.typescriptlang.org/) and [Phaser.io](http://phaser.io/)
+Start developing your own HTML5 games using [TypeScript](https://www.typescriptlang.org/), [Phaser.io](http://phaser.io/), and [Angular 2](https://angular.io/).
 
 ## Requirements
 

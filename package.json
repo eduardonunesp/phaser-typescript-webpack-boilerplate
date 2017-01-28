@@ -1,14 +1,25 @@
 {
-  "name": "phaser-typescript-webpack-boilerplate",
-  "version": "1.0.0",
-  "description": "Starter boilerplate for an Phaser game",
+  "name": "angular2-phaser-typescript-webpack-boilerplate",
+  "version": "0.1.0-alpha",
+  "description": "Starter for an HTML5 game using Angular 2, Phaser CE, Typescript, and Webpack. Includes unit testing and coverage reporting.",
   "main": "dist/index.js",
   "scripts": {
     "start": "webpack-dev-server -d --inline --hot --progress --no-info --port 9000",
     "build": "rimraf ./dist && webpack -p",
     "test": "karma start"
   },
-  "author": "Eduardo Nunes Pereira (eduardonunesp@gmail.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/twbte/angular2-phaser-typescript-webpack-boilerplate"
+  },
+  "bugs": {
+    "url": "https://github.com/twbte/angular2-phaser-typescript-webpack-boilerplate/issues"
+  },
+  "author": "Tristan W. Bonsor <twbtechnologies@gmail.com>",
+  "contributors": [{
+    "name": "Eduardo Nunes Pereira",
+    "email": "eduardonunesp@gmail.com"
+  }],
   "license": "MIT",
   "dependencies": {
     "@angular/common": "^2.4.5",
