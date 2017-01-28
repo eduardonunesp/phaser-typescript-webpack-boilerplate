@@ -41,20 +41,19 @@ module.exports = function (config) {
      * preprocess matching files before serving them to the browser
      * available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
      */
-    preprocessors: { './karma-shim.js': ['webpack'] },
+    preprocessors: { './karma-shim.js': ['coverage', 'webpack', 'sourcemap'] },
 
     // Webpack Config at ./webpack.test.js
     webpack: testWebpackConfig,
 
     coverageReporter: {
-      dir: './coverage/',
-      reporters: [
-        {
-          type: 'json',
-          subdir: 'raw',
-          file: 'coverage-final.json'
-        }
-      ]
+      type: 'in-memory'
+    },
+
+    remapCoverageReporter: {
+      'text-summary': null,
+      json: './coverage/coverage.json',
+      html: './coverage/html'
     },
 
     // Webpack please don't spam the console when running in karma!
@@ -75,7 +74,7 @@ module.exports = function (config) {
      * possible values: 'dots', 'progress'
      * available reporters: https://npmjs.org/browse/keyword/karma-reporter
      */
-    reporters: ['mocha', 'coverage'],
+    reporters: ['mocha', 'coverage', 'remap-coverage'],
 
     // web server port
     port: 9876,

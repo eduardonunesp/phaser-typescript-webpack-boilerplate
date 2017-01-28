@@ -29,6 +29,16 @@ module.exports = function (options) {
     ],
     module: {
       loaders: [
+        {
+          enforce: 'pre',
+          test: /\.js$/,
+          loader: 'source-map-loader',
+          exclude: [
+            // these packages have problems with their sourcemaps
+            './node_modules/rxjs',
+            './node_modules/@angular'
+          ]
+        },
         { test: /pixi\.js/, loader: 'expose-loader?PIXI' },
         { test: /phaser-split\.js$/, loader: 'expose-loader?Phaser' },
         { test: /p2\.js/, loader: 'expose-loader?p2' },
