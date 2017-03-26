@@ -17,9 +17,6 @@ module.exports = {
     path: path.resolve('./dist'),
     publicPath: '/'
   },
-  resolve: {
-    extensions: ['', '.js', '.ts'],
-  },
   plugins: [
     new CopyWebpackPlugin([
       {
@@ -45,6 +42,7 @@ module.exports = {
     fs: 'empty'
   },
   resolve: {
+    extensions: ['', '.js', '.ts'],
     alias: {
       'phaser': phaser,
       'pixi': pixi,
