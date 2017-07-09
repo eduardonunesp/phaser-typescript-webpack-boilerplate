@@ -4,6 +4,7 @@
 import 'pixi';
 import 'p2';
 import * as Phaser from 'phaser';
+import Config from './config';
 
 class SimpleGame {
   game: Phaser.Game;
@@ -11,7 +12,7 @@ class SimpleGame {
   cursors: Phaser.CursorKeys;
 
   constructor() {
-    this.game = new Phaser.Game(800, 600, Phaser.AUTO, "content", this);
+    this.game = new Phaser.Game(Config.width, Config.height, Phaser.AUTO, "content", this);
   }
 
   preload() {
