@@ -10,14 +10,15 @@
   "author": "Eduardo Nunes Pereira (eduardonunesp@gmail.com)",
   "license": "MIT",
   "devDependencies": {
-    "copy-webpack-plugin": "^3.0.1",
-    "expose-loader": "^0.7.1",
-    "html-webpack-plugin": "^2.29.0",
-    "phaser": "^2.6.2",
-    "rimraf": "^2.5.4",
-    "ts-loader": "^0.8.2",
-    "typescript": "^2.4.1",
-    "webpack": "^1.15.0",
-    "webpack-dev-server": "^1.16.5"
+    "copy-webpack-plugin": "~4.2.0",
+    "expose-loader": "~0.7.3",
+    "html-webpack-plugin": "~2.30.1",
+    "phaser-ce": "~2.9.1",
+    "rimraf": "~2.6.2",
+    "ts-loader": "~3.1.0",
+    "tslint": "5.8.0",
+    "typescript": "2.5.3",
+    "webpack": "~3.8.1",
+    "webpack-dev-server": "~2.9.3"
   }
 }

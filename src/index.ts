@@ -1,9 +1,6 @@
-/// <reference path="../node_modules/phaser/typescript/phaser.d.ts"/>
-/// <reference path="../node_modules/phaser/typescript/pixi.d.ts"/>
-
 import 'pixi';
 import 'p2';
-import * as Phaser from 'phaser';
+import Phaser from 'phaser-ce';
 import Config from './config';
 
 class SimpleGame {
