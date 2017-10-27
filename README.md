@@ -15,4 +15,9 @@ Clone this project in any directory and type `npm install` to install all depend
 
 And to distribute your game just run `npm build` it will create the `dist` directory with all necessary files, ready to push to any HTTP server.
 
+**Debug**
+
+To debug with [vscode](https://code.visualstudio.com/) install the [chrome debugger](https://github.com/Microsoft/vscode-chrome-debug) extension and then go to the console and run `npm start` and then click anywhere in the editor and press `F5`
+setup any breakpoints and that's it.
+
 ### License MIT
