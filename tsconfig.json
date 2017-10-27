@@ -1,12 +1,12 @@
 {
   "version": "2.0.0",
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6", // you can set it to es5 if you are targeting ie 
     "moduleResolution": "node",
-    "noImplicitAny": false,
     "removeComments": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "outDir": "dist"
   },
