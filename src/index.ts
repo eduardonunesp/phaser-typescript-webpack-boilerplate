@@ -7,9 +7,9 @@ import * as Phaser from 'phaser';
 import Config from './config';
 
 class SimpleGame {
-  game: Phaser.Game;
-  logo: Phaser.Sprite;
-  cursors: Phaser.CursorKeys;
+  protected game: Phaser.Game;
+  protected logo: Phaser.Sprite;
+  protected cursors: Phaser.CursorKeys;
 
   constructor() {
     this.game = new Phaser.Game(Config.width, Config.height, Phaser.AUTO, "content", this);
