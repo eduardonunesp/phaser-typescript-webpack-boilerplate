@@ -27,6 +27,7 @@ module.exports = {
     publicPath: '/'
   },
   devServer: {
+    hot: false,
     compress: true,
     disableHostCheck: true,   // That solved it
   },
