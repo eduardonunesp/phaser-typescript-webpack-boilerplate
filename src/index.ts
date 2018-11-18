@@ -40,5 +40,5 @@ class SimpleGame {
 }
 
 window.onload = () => {
-  const game = new SimpleGame();
+  new SimpleGame();
 };
