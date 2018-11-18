@@ -19,7 +19,7 @@
     "typescript": "^2.7.2",
     "webpack": "^3.11.0",
     "webpack-dev-server": "^1.16.5",
-    "phaser-ce": "^2.10.0",
+    "phaser-ce": "^2.11.1",
     "webfontloader": "^1.6.28"
   }
 }

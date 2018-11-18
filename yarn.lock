@@ -1950,13 +1950,15 @@ performance-now@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-0.2.0.tgz#33ef30c5c77d4ea21c5a53869d91b56d8f2555e5"
 
-phaser-ce@^2.10.0:
-  version "2.10.1"
-  resolved "https://registry.yarnpkg.com/phaser-ce/-/phaser-ce-2.10.1.tgz#504962d509dee2c9c595398fbe3f5dbcbb173a50"
+phaser-ce@^2.11.1:
+  version "2.11.1"
+  resolved "https://registry.yarnpkg.com/phaser-ce/-/phaser-ce-2.11.1.tgz#a40f918151ceae3e6ed270aec9e0606d198c655d"
+  integrity sha512-5Ta9g5bZI7YzKzON6LoUGhvkG64swmbHvFntydjNssLLbDtWb9eo3WxuVeKkbxl4bJ/iIP/Zs6QbuxhxsWwoWg==
 
 phaser@^2.6.2:
   version "2.6.2"
   resolved "https://registry.yarnpkg.com/phaser/-/phaser-2.6.2.tgz#eb39121725a2149c49f46b5d144318c22bc09249"
+  integrity sha1-6zkSFyWiFJxJ9GtdFEMYwivAkkk=
 
 pify@^2.0.0:
   version "2.3.0"
